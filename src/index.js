@@ -1,4 +1,6 @@
+import "babel-polyfill";
 
+console.log(Array.from('aaaa'));
 
 const sum = (a,b)=>a+b;
 
