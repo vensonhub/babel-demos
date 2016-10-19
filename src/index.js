@@ -1,20 +1,8 @@
-//import "babel-polyfill";
+//function Point(x,y){
+//    this.x = x;
+//    this.y = y;
+//}
 //
-//console.log(Array.from('aaaa'));
-//
-//const sum = (a,b)=>a+b;
-//
-//let x = sum(1,2);
-//
-//console.log("babel:"+x);
-
-const Template = {
-    test: function(){
-        console.log(this);
-        $('#event').on('click',()=>{
-            // 大家觉得这个 this 是什么
-            console.log(this);
-        });
-    }
-};
-Template.test();
+//Point.prototype.toString = function () {
+//    return '(' + this.x + ', ' + this.y + ')';
+//}
