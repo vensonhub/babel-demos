@@ -186,6 +186,27 @@ $ npm install --save-dev babel-preset-stage-0
 gulp:
 babel与gulp使用：
 npm install gulp gulp-babel --save-dev
+
 创建gulpfile.js
 touch gulpfile.js
+
+var gulp = require('gulp');
+var babel = require('gulp-babel');
+
+gulp.task("babel",function(){
+    return gulp.src('src/*.js')
+        .pipe(babel())
+        .pipe(gulp.dest('build'));
+})
+
+gulp.task("default",["babel"]);
+
+package.json:
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/babel src -d build",
+ +  "dev": "./node_modules/.bin/gulp"
+  },
+
+
 ```
