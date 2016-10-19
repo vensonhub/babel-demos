@@ -53,5 +53,14 @@ SyntaxError: src/jsx.js: Unexpected token (5:15)
 {
 	"presets":["es2015","react"]
 }
+需要添加react的预设
+$ npm install --save-dev babel-preset-react
+$ npm run build
+
+plugin:
+在babeljs.io/docs/plugins查看
+
+$ npm install --save-dev babel-plugin-transform-runtime
+$ npm install --save babel-runtime
 
 ```
