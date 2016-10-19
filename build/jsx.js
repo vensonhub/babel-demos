@@ -1,94 +1,48 @@
-(function (global, factory) {
-    if (typeof define === "function" && define.amd) {
-        define(['react'], factory);
-    } else if (typeof exports !== "undefined") {
-        factory(require('react'));
-    } else {
-        var mod = {
-            exports: {}
-        };
-        factory(global.react);
-        global.jsx = mod.exports;
-    }
-})(this, function (_react) {
-    'use strict';
+'use strict';
 
-    var _react2 = _interopRequireDefault(_react);
+var _getPrototypeOf = require('babel-runtime/core-js/object/get-prototype-of');
 
-    function _interopRequireDefault(obj) {
-        return obj && obj.__esModule ? obj : {
-            default: obj
-        };
-    }
+var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-    function _classCallCheck(instance, Constructor) {
-        if (!(instance instanceof Constructor)) {
-            throw new TypeError("Cannot call a class as a function");
-        }
-    }
+var _classCallCheck2 = require('babel-runtime/helpers/classCallCheck');
 
-    var _createClass = function () {
-        function defineProperties(target, props) {
-            for (var i = 0; i < props.length; i++) {
-                var descriptor = props[i];
-                descriptor.enumerable = descriptor.enumerable || false;
-                descriptor.configurable = true;
-                if ("value" in descriptor) descriptor.writable = true;
-                Object.defineProperty(target, descriptor.key, descriptor);
-            }
-        }
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-        return function (Constructor, protoProps, staticProps) {
-            if (protoProps) defineProperties(Constructor.prototype, protoProps);
-            if (staticProps) defineProperties(Constructor, staticProps);
-            return Constructor;
-        };
-    }();
+var _createClass2 = require('babel-runtime/helpers/createClass');
 
-    function _possibleConstructorReturn(self, call) {
-        if (!self) {
-            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-        }
+var _createClass3 = _interopRequireDefault(_createClass2);
 
-        return call && (typeof call === "object" || typeof call === "function") ? call : self;
+var _possibleConstructorReturn2 = require('babel-runtime/helpers/possibleConstructorReturn');
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = require('babel-runtime/helpers/inherits');
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var DemoCompopent = function (_Compopent) {
+    (0, _inherits3.default)(DemoCompopent, _Compopent);
+
+    function DemoCompopent() {
+        (0, _classCallCheck3.default)(this, DemoCompopent);
+        return (0, _possibleConstructorReturn3.default)(this, (DemoCompopent.__proto__ || (0, _getPrototypeOf2.default)(DemoCompopent)).apply(this, arguments));
     }
 
-    function _inherits(subClass, superClass) {
-        if (typeof superClass !== "function" && superClass !== null) {
-            throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+    (0, _createClass3.default)(DemoCompopent, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'h1',
+                null,
+                'hello world'
+            );
         }
-
-        subClass.prototype = Object.create(superClass && superClass.prototype, {
-            constructor: {
-                value: subClass,
-                enumerable: false,
-                writable: true,
-                configurable: true
-            }
-        });
-        if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-    }
-
-    var DemoCompopent = function (_Compopent) {
-        _inherits(DemoCompopent, _Compopent);
-
-        function DemoCompopent() {
-            _classCallCheck(this, DemoCompopent);
-
-            return _possibleConstructorReturn(this, (DemoCompopent.__proto__ || Object.getPrototypeOf(DemoCompopent)).apply(this, arguments));
-        }
-
-        _createClass(DemoCompopent, [{
-            key: 'render',
-            value: function render() {
-                return _react2.default.createElement(
-                    'h1',
-                    null,
-                    'hello world'
-                );
-            }
-        }]);
-
-        return DemoCompopent;
-    }(_react.Compopent);
-});
+    }]);
+    return DemoCompopent;
+}(_react.Compopent);
