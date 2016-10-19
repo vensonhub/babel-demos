@@ -182,4 +182,10 @@ $ npm install --save-dev babel-preset-stage-0
     ],
     "plugins": []
   }
+  
+gulp:
+babel与gulp使用：
+npm install gulp gulp-babel --save-dev
+创建gulpfile.js
+touch gulpfile.js
 ```
